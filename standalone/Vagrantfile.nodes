@@ -9,11 +9,10 @@
 
 nodes = {
   'icinga2' => {
-    :box_virtualbox => 'bento/centos-7',
-    :box_parallels  => 'bento/centos-7',
-    :box_vmware     => 'bento/centos-7',
-    :box_hyperv     => 'centos/7',
-    :box_libvirt    => 'centos/7',
+    :box_virtualbox => 'bento/centos-stream-8',
+    :box_parallels  => 'bento/oracle-8',
+    :box_vmware     => 'bento/oracle-8',
+    :box_libvirt    => 'centos/stream8',
     :net            => 'vagrant.demo.icinga.com',
     :hostonly       => '192.168.33.5', # keep in sync with hieradata
     :memory         => '2048',
